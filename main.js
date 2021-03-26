@@ -5,7 +5,6 @@ var icon2 = "@2x.png"
 
 $(document).ready(function(){
     $(document).on('keypress', function(e){
-        if (e.which == 13) {
     $("form").submit(function(event){
         event.preventDefault();
         var city = $(".city").val();
@@ -21,7 +20,6 @@ $(document).ready(function(){
             
         }, "json");
     })
-}
 })
 })
 
